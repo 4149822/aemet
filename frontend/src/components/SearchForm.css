@@ -1,0 +1,62 @@
+.box input {
+    background-color: #18191B;
+    border: 1px solid #51565D;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: inherit;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.segmented {
+    display: flex;
+    background-color: #18191B;
+    border: 1px solid #51565D;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.segmented button {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    padding: 8px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.segmented button.active {
+    background-color: #2c2f33;
+}
+
+.box input:focus {
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    gap: 8px;
+}
+
+.box button {
+    padding: 0 10px;
+}
+
+
+
+body.light .box input {
+    background-color: #ffffff;
+    color: #1f2937;
+}
+
+body.light .segmented {
+    background-color: #ffffff;
+}
+
+body.light .segmented button {
+    color: black;
+}
+
+body.light .segmented button.active{
+    background-color: #8d8d8d;
+}
